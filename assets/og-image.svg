@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#10233B"/>
+  <circle cx="1060" cy="90" r="3" fill="#E8A33C"/>
+  <text x="80" y="150" font-family="'JetBrains Mono', monospace" font-size="22" letter-spacing="3" fill="#E8A33C">DATA ANALYST · REMOTE</text>
+  <text x="78" y="270" font-family="'Space Grotesk', Arial, sans-serif" font-weight="700" font-size="64" fill="#FFFFFF">Kouassi Kouadio Franck</text>
+  <text x="80" y="340" font-family="'Space Grotesk', Arial, sans-serif" font-weight="500" font-size="34" fill="#FFFFFF" opacity="0.85">Je transforme des données de terrain</text>
+  <text x="80" y="385" font-family="'Space Grotesk', Arial, sans-serif" font-weight="500" font-size="34" fill="#FFFFFF" opacity="0.85">en décisions de direction.</text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="20" fill="#FFFFFF" opacity="0.75">
+    <text x="80" y="470">14 études &amp; dashboards</text>
+    <text x="360" y="470">6 outils</text>
+    <text x="520" y="470">7 secteurs</text>
+    <text x="720" y="470">Banque Mondiale · ONG ACP2-H</text>
+  </g>
+
+  <rect x="80" y="500" width="1040" height="1" fill="#FFFFFF" opacity="0.15"/>
+  <text x="80" y="555" font-family="'JetBrains Mono', monospace" font-size="20" fill="#E8A33C">Power BI · Python · SQL · R · Tableau · Excel</text>
+</svg>
