@@ -3,6 +3,7 @@
 const TRANSLATIONS = {
   brand_role: { fr: "Data Analyst", en: "Data Analyst" },
   nav_value: { fr: "Pourquoi moi", en: "Why me" },
+  nav_top10: { fr: "Top 10 Power BI", en: "Top 10 Power BI" },
   nav_projects: { fr: "Projets", en: "Projects" },
   nav_skills: { fr: "Compétences", en: "Skills" },
   nav_experience: { fr: "Expérience", en: "Experience" },
@@ -46,6 +47,15 @@ const TRANSLATIONS = {
   tool_1_text: { fr: "Dashboards multi-établissements et pilotage direction, jusqu'à 15 000+ consultations suivies sur un seul réseau.", en: "Multi-facility dashboards and executive reporting, tracking 15,000+ consultations on a single network." },
   tool_2_text: { fr: "Automatisation d'insights en langage naturel et applications interactives (Streamlit) pour détecter des anomalies en temps réel.", en: "Natural-language insight automation and interactive apps (Streamlit) to catch anomalies in real time." },
   tool_3_text: { fr: "Requêtes métier complexes pour répondre à 15+ questions RH et auditer la qualité de bases de 100 000+ lignes.", en: "Complex business queries to answer 15+ HR questions and audit databases of 100,000+ rows." },
+
+  label_top10: { fr: "sélection", en: "selection" },
+  top10_title: { fr: "Top 10 projets Power BI", en: "Top 10 Power BI projects" },
+  top10_intro: { fr: "Mes dashboards Power BI les plus aboutis, classés par impact business, complexité technique (modélisation, DAX, Power Query) et qualité visuelle.", en: "My most accomplished Power BI dashboards, ranked by business impact, technical complexity (modeling, DAX, Power Query) and visual quality." },
+  top10_rank_label: { fr: "Rang", en: "Rank" },
+  top10_cta_report: { fr: "Voir le rapport →", en: "View report →" },
+  top10_lightbox_open: { fr: "Agrandir l'aperçu", en: "Enlarge preview" },
+  top10_lightbox_close: { fr: "Fermer l'aperçu", en: "Close preview" },
+  top10_badge_top: { fr: "Top 3", en: "Top 3" },
 
   label_portfolio: { fr: "portfolio", en: "portfolio" },
   projects_title: { fr: "Projets", en: "Projects" },

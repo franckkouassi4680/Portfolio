@@ -565,6 +565,154 @@ p{ margin: 0; }
 .compact-cta{ font-size: 0.8rem; font-weight: 600; color: var(--teal-dark); white-space: nowrap; transition: color 0.15s ease; }
 .compact-cta:hover{ color: var(--berry); }
 
+/* ---------- Top 10 Power BI ---------- */
+.top10-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.top10-card{
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.top10-card:hover{ box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.top10-card-top3{
+  border-color: var(--amber);
+  box-shadow: 0 0 0 1px var(--amber), var(--shadow-card);
+}
+@media (min-width: 900px){
+  .top10-card-top3{ grid-column: span 2; }
+}
+
+.top10-card-media{ position: relative; background: var(--navy-soft); }
+.top10-img-btn{
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  line-height: 0;
+}
+.top10-img-btn img{ width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.top10-img-btn:focus-visible{ outline: 3px solid var(--turquoise); outline-offset: -3px; }
+
+.top10-rank{
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #fff;
+  background: rgba(16,35,59,0.78);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  pointer-events: none;
+}
+.top10-badge-top3{
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  background: var(--amber);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  pointer-events: none;
+}
+
+.top10-card-body{ padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; gap: 0.7rem; flex: 1; }
+.top10-card-head{ display: flex; justify-content: space-between; align-items: flex-start; gap: 0.8rem; }
+.top10-card-title{ font-family: var(--font-display); font-size: 1.1rem; color: var(--navy); margin: 0; }
+.top10-card-sector{ font-size: 0.82rem; color: var(--teal-dark); font-weight: 500; margin: -0.3rem 0 0; }
+.top10-card-desc{ font-size: 0.9rem; color: var(--slate); margin: 0; }
+
+.top10-metrics{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0;
+  padding: 0;
+}
+.top10-metric{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  background: rgba(20,149,139,0.12);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+}
+
+.top10-note{ font-size: 0.76rem; color: var(--slate-light); font-style: italic; margin: 0; }
+
+.top10-card-actions{ margin-top: auto; padding-top: 0.5rem; }
+.top10-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--teal-dark);
+  transition: color 0.15s ease;
+}
+.top10-cta:hover{ color: var(--berry); }
+
+/* Lightbox */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10,18,30,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.lightbox[hidden]{ display: none; }
+body.lightbox-open{ overflow: hidden; }
+.lightbox-img{
+  max-width: min(92vw, 1200px);
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-hover);
+}
+.lightbox-close{
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(16,35,59,0.8);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.lightbox-close:hover{ background: var(--berry); }
+.lightbox-close:focus-visible{ outline: 3px solid var(--turquoise); outline-offset: 2px; }
+
+@media (max-width: 680px){
+  .top10-grid{ grid-template-columns: 1fr; }
+  .top10-card-top3{ grid-column: auto; }
+}
+
 /* ---------- Skills ---------- */
 .card-skill{
   background: var(--bg-card);

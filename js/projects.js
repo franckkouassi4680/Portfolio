@@ -87,7 +87,17 @@ const PROJECTS = [
     result: {
       fr: "Marge nette de 37,7% sur 2021-2025, plus de 15 000 consultations suivies sur 11 cliniques.",
       en: "37.7% net margin over 2021-2025, 15,000+ consultations tracked across 11 clinics."
-    }
+    },
+    image: "assets/top10-powerbi/top10-ivoiresante-plus.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI IvoireSanté Plus : recettes, bénéfices et marge nette par région et par clinique.",
+      en: "IvoireSanté Plus Power BI dashboard: revenue, profit and net margin by region and clinic."
+    },
+    metrics: [
+      { fr: "37,7 % de marge nette", en: "37.7% net margin" },
+      { fr: "15 000+ consultations", en: "15,000+ consultations" },
+      { fr: "11 cliniques suivies", en: "11 clinics tracked" }
+    ]
   },
   {
     id: "kin-marche",
@@ -101,7 +111,17 @@ const PROJECTS = [
     result: {
       fr: "899,90M de ventes, 332,13M de profit, marge de 42,3%, 2M d'articles vendus.",
       en: "899.90M in sales, 332.13M profit, 42.3% margin, 2M items sold."
-    }
+    },
+    image: "assets/top10-powerbi/top10-kin-marche.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI Kin Marché : ventes totales, profit, marge moyenne, répartition par méthode de vente et par région.",
+      en: "Kin Marché Power BI dashboard: total sales, profit, average margin, breakdown by sales method and region."
+    },
+    metrics: [
+      { fr: "899,90 M de ventes", en: "899.90M in sales" },
+      { fr: "42,3 % de marge", en: "42.3% margin" },
+      { fr: "2 M d'articles vendus", en: "2M items sold" }
+    ]
   },
   {
     id: "cib",
@@ -115,7 +135,16 @@ const PROJECTS = [
     result: {
       fr: "35 666 demandes traitées, délai moyen réduit de 4 à 1 jour.",
       en: "35,666 requests processed, average processing time cut from 4 to 1 day."
-    }
+    },
+    image: "assets/top10-powerbi/top10-pilotage-demandes-cib.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI de pilotage des demandes CIB : évolution mensuelle, répartition par unité, délai moyen de traitement.",
+      en: "CIB request management Power BI dashboard: monthly trend, breakdown by unit, average processing time."
+    },
+    metrics: [
+      { fr: "35 666 demandes traitées", en: "35,666 requests processed" },
+      { fr: "Délai moyen de 3 jours", en: "3-day average turnaround" }
+    ]
   },
   {
     id: "rh-210",
@@ -143,7 +172,17 @@ const PROJECTS = [
     result: {
       fr: "145K ventes, 541,85M de CA, croissance de +106,65% vs année précédente.",
       en: "145K sales, 541.85M revenue, +106.65% growth vs previous year."
-    }
+    },
+    image: "assets/top10-powerbi/top10-ventes-categorie-marque.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI des ventes par catégorie et marque : chiffre d'affaires, évolution mensuelle, répartition par catégorie de produit.",
+      en: "Power BI dashboard of sales by category and brand: revenue, monthly trend, breakdown by product category."
+    },
+    metrics: [
+      { fr: "541,85 M de CA", en: "541.85M revenue" },
+      { fr: "+106,65 % de croissance", en: "+106.65% growth" },
+      { fr: "145K ventes", en: "145K sales" }
+    ]
   },
   {
     id: "hospitalieres",
@@ -244,5 +283,180 @@ const PROJECTS = [
       fr: "Suivi mensuel des consultations avec analyse régionale et démographique, par type de service.",
       en: "Monthly consultation tracking with regional and demographic analysis, by service type."
     }
+  },
+  {
+    id: "nutrition-nzi",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiNTcyMjJhOWUtODE2YS00ZjFiLTliMzItMjFiNDJlODk3NjNhIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi nutritionnel — région du N'Zi",
+    sector: { fr: "Santé publique — nutrition infantile", en: "Public health — child nutrition" },
+    result: {
+      fr: "3 200 enfants suivis (6-59 mois) sur 20 établissements, prévalence de malnutrition aiguë globale de 11,1 %, taux de guérison PCIMA de 83,9 %.",
+      en: "3,200 children tracked (6-59 months) across 20 facilities, 11.1% global acute malnutrition prevalence, 83.9% PCIMA recovery rate."
+    },
+    image: "assets/top10-powerbi/top10-nutrition-nzi.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI du suivi nutritionnel du N'Zi : KPI de prévalence MAG/MAS, évolution mensuelle, répartition par district et par âge.",
+      en: "Power BI dashboard of the N'Zi nutrition monitoring project: MAG/MAS prevalence KPIs, monthly trend, breakdown by district and age."
+    },
+    metrics: [
+      { fr: "3 200 enfants suivis", en: "3,200 children tracked" },
+      { fr: "11,1 % de prévalence MAG", en: "11.1% GAM prevalence" },
+      { fr: "83,9 % de taux de guérison", en: "83.9% recovery rate" }
+    ],
+    dataNote: {
+      fr: "Données simulées à des fins pédagogiques (voir méthodologie dans le dépôt).",
+      en: "Simulated data for training purposes (see methodology in the repository)."
+    }
+  },
+  {
+    id: "demandes-clients-ens",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMmFiYjQ1MDYtMWJiNy00ZjY2LWJmNmQtZWQzMjkzYjViZDc2IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi des demandes clients — Énergie du N'Zi Services",
+    sector: { fr: "Énergie — service client", en: "Energy — customer service" },
+    result: {
+      fr: "15 036 demandes traitées en 18 mois, SLA de résolution de 69,6 %, score de satisfaction (CSAT) de 54,8 %.",
+      en: "15,036 requests processed over 18 months, 69.6% resolution SLA, 54.8% CSAT score."
+    },
+    image: "assets/top10-powerbi/top10-demandes-clients-ens.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI du service client ENS : volumes de demandes, répartition par canal, SLA et satisfaction.",
+      en: "Power BI dashboard of ENS customer service: request volumes, channel breakdown, SLA and satisfaction."
+    },
+    metrics: [
+      { fr: "15 036 demandes traitées", en: "15,036 requests processed" },
+      { fr: "69,6 % de SLA résolution", en: "69.6% resolution SLA" },
+      { fr: "54,8 % de satisfaction (CSAT)", en: "54.8% CSAT" }
+    ],
+    dataNote: {
+      fr: "Données simulées à des fins pédagogiques (voir méthodologie dans le dépôt).",
+      en: "Simulated data for training purposes (see methodology in the repository)."
+    }
+  },
+  {
+    id: "eha-nzi",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZjg1MWY3NDctMmM4MC00ZDhlLTgxNDQtZGJjMjc1OGRhMTU5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi eau, hygiène et sécurité alimentaire — N'Zi",
+    sector: { fr: "Humanitaire — EHA et sécurité alimentaire", en: "Humanitarian — WASH and food security" },
+    result: {
+      fr: "Accès à une source d'eau améliorée en hausse de 49,9 % à 76,7 % (+26,8 points) entre les phases de référence et finale, sur 1 475 ménages.",
+      en: "Access to an improved water source rose from 49.9% to 76.7% (+26.8 points) between baseline and endline, across 1,475 households."
+    },
+    image: "assets/top10-powerbi/top10-eha-nzi.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI du suivi EHA et sécurité alimentaire du N'Zi : indicateurs baseline/endline, score de consommation alimentaire, accès à l'eau.",
+      en: "Power BI dashboard of the N'Zi WASH and food security monitoring: baseline/endline indicators, food consumption score, water access."
+    },
+    metrics: [
+      { fr: "1 475 ménages évalués", en: "1,475 households assessed" },
+      { fr: "+26,8 pts d'accès à l'eau", en: "+26.8 pts water access" },
+      { fr: "+16,1 pts de sécurité alimentaire (FCS)", en: "+16.1 pts food security (FCS)" }
+    ],
+    dataNote: {
+      fr: "Données simulées à des fins pédagogiques (voir méthodologie dans le dépôt).",
+      en: "Simulated data for training purposes (see methodology in the repository)."
+    }
+  },
+  {
+    id: "chaine-approvisionnement-kouto",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZjg1MWY3NDctMmM4MC00ZDhlLTgxNDQtZGJjMjc1OGRhMTU5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Diagnostic de la chaîne d'approvisionnement en produits de santé — Kouto",
+    sector: { fr: "Santé — logistique et chaîne d'approvisionnement", en: "Healthcare — supply chain logistics" },
+    result: {
+      fr: "41 structures sanitaires diagnostiquées dans le district de Kouto : 43 % de livraisons complètes, distance moyenne de 22 km au dépôt, satisfaction globale de 3,6/5.",
+      en: "41 health facilities assessed in the Kouto district: 43% complete deliveries, average 22 km distance to depot, 3.6/5 overall satisfaction."
+    },
+    image: "assets/top10-powerbi/top10-chaine-approvisionnement-kouto.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI du diagnostic de la chaîne d'approvisionnement en produits de santé du district de Kouto.",
+      en: "Power BI dashboard diagnosing the health product supply chain in the Kouto district."
+    },
+    metrics: [
+      { fr: "41 structures interrogées", en: "41 facilities surveyed" },
+      { fr: "43 % de livraisons complètes", en: "43% complete deliveries" },
+      { fr: "3,6/5 satisfaction globale", en: "3.6/5 overall satisfaction" }
+    ]
+  },
+  {
+    id: "qvt-kouto",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiOTNmNGU2NGMtNjNiMS00YTFmLThiYzktMDYzNGQyY2I3MzdhIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Qualité de vie au travail du personnel — Hôpital Général de Kouto",
+    sector: { fr: "Santé — ressources humaines", en: "Healthcare — human resources" },
+    result: {
+      fr: "Enquête auprès de 55 agents de l'Hôpital Général de Kouto : 56 % rapportent avoir été victimes d'agression, 82 % se disent toujours motivés.",
+      en: "Survey of 55 staff members at Hôpital Général de Kouto: 56% report having experienced aggression, 82% say they remain motivated."
+    },
+    image: "assets/top10-powerbi/top10-qvt-kouto.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI de la qualité de vie au travail du personnel de l'Hôpital Général de Kouto : indicateurs clés et comparaisons par service et profession.",
+      en: "Power BI dashboard on quality of working life for Hôpital Général de Kouto staff: key indicators and comparisons by service and profession."
+    },
+    metrics: [
+      { fr: "55 agents interrogés", en: "55 staff surveyed" },
+      { fr: "56 % victimes d'agression", en: "56% experienced aggression" },
+      { fr: "82 % toujours motivés", en: "82% remain motivated" }
+    ]
+  },
+  {
+    id: "denombrement-acp2h",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMGI0MzFhMmMtYzg3NS00OWQxLWE1YTQtYzljMjkxN2E4NmE4IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Dénombrement des ménages — ACP2-H (région du N'Zi)",
+    sector: { fr: "Humanitaire — démographie et ciblage", en: "Humanitarian — demographics and targeting" },
+    result: {
+      fr: "1 441 ménages recensés sur 12 localités, 7 775 personnes dénombrées, 40,5 % de cheffes de ménage.",
+      en: "1,441 households enumerated across 12 localities, 7,775 people counted, 40.5% female-headed households."
+    },
+    image: "assets/top10-powerbi/top10-denombrement-acp2h.webp",
+    imageAlt: {
+      fr: "Tableau de bord Power BI du dénombrement des ménages ACP2-H dans la région du N'Zi : ménages, population et répartition par sous-préfecture.",
+      en: "Power BI dashboard of the ACP2-H household enumeration in the N'Zi region: households, population and breakdown by sub-prefecture."
+    },
+    metrics: [
+      { fr: "1 441 ménages recensés", en: "1,441 households enumerated" },
+      { fr: "7 775 personnes", en: "7,775 people" },
+      { fr: "40,5 % de cheffes de ménage", en: "40.5% female household heads" }
+    ],
+    dataNote: {
+      fr: "Données de test (fictives), comme indiqué sur le tableau de bord.",
+      en: "Test (simulated) data, as disclosed on the dashboard."
+    }
   }
+];
+
+/* Top 10 projets Power BI — classement avec justification, validé avec le client.
+   Référence des projets ci-dessus par id ; ordre = rang (1 = meilleur). */
+const TOP10_POWERBI = [
+  { id: "nutrition-nzi", justification: { fr: "Volume important (3 200 enfants), méthodologie rigoureuse (z-scores OMS), sujet humanitaire à fort impact.", en: "Large sample (3,200 children), rigorous methodology (WHO z-scores), high-impact humanitarian topic." } },
+  { id: "demandes-clients-ens", justification: { fr: "15 036 tickets, régression logistique avec odds ratios, modélisation DAX avancée, lecture business claire (SLA, CSAT).", en: "15,036 tickets, logistic regression with odds ratios, advanced DAX modeling, clear business read (SLA, CSAT)." } },
+  { id: "eha-nzi", justification: { fr: "Évaluation d'impact baseline/endline sur 1 475 ménages, tests statistiques significatifs, effet projet démontré.", en: "Baseline/endline impact evaluation across 1,475 households, significant statistical tests, demonstrated project effect." } },
+  { id: "chaine-approvisionnement-kouto", justification: { fr: "Diagnostic terrain réel sur 41 structures sanitaires, directement lié à mon expérience de référent technique à l'Hôpital Général de Kouto.", en: "Real field diagnostic across 41 health facilities, directly tied to my experience as technical referent at Hôpital Général de Kouto." } },
+  { id: "qvt-kouto", justification: { fr: "Enquête terrain réelle, analyse croisée fine par service, profession et ancienneté.", en: "Real field survey, detailed cross-analysis by service, profession and seniority." } },
+  { id: "denombrement-acp2h", justification: { fr: "Projet réel de mon ONG (ACP2-H), démographie complète par localité sur 5 pages d'analyse.", en: "Real project from my NGO (ACP2-H), full demographic breakdown by locality across 5 analysis pages." } },
+  { id: "ivoiresante", justification: { fr: "Dashboard multi-établissements (11 cliniques), narration business forte (marge nette de 37,7 %).", en: "Multi-facility dashboard (11 clinics), strong business narrative (37.7% net margin)." } },
+  { id: "cib", justification: { fr: "Secteur bancaire, impact opérationnel mesurable (délai moyen réduit à 3 jours sur 35 666 demandes).", en: "Banking sector, measurable operational impact (average processing time cut to 3 days across 35,666 requests)." } },
+  { id: "ventes-categorie", justification: { fr: "Forte croissance affichée (+106,65 %), lecture commerciale claire par catégorie et marque.", en: "Strong growth shown (+106.65%), clear commercial read by category and brand." } },
+  { id: "kin-marche", justification: { fr: "KPIs complets (ventes, profit, marge), bon exemple de pilotage retail.", en: "Complete KPI set (sales, profit, margin), solid retail management example." } }
 ];
