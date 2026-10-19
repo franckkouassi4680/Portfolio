@@ -7,6 +7,11 @@
   const featuredWrap = document.getElementById("featured-projects");
   const compactWrap = document.getElementById("compact-projects");
   const emptyMsg = document.getElementById("filter-empty");
+  const top10Wrap = document.getElementById("top10-grid");
+  const lightbox = document.getElementById("top10-lightbox");
+  const lightboxImg = document.getElementById("top10-lightbox-img");
+  const lightboxClose = document.getElementById("top10-lightbox-close");
+  let lightboxTrigger = null;
 
   /* ---------- i18n ---------- */
   function applyTranslations(lang) {
@@ -22,6 +27,7 @@
     currentLang = lang;
     applyTranslations(lang);
     renderProjects();
+    renderTop10();
     const toggle = document.getElementById("lang-toggle");
     toggle.querySelector(".lang-fr").classList.toggle("is-active", lang === "fr");
     toggle.querySelector(".lang-en").classList.toggle("is-active", lang === "en");
@@ -83,6 +89,95 @@
       '<a class="compact-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("cta_view_dashboard") + "</a>";
 
     return row;
+  }
+
+  /* ---------- Top 10 Power BI ---------- */
+  function buildTop10Card(entry, index) {
+    const p = PROJECTS.find(function (item) { return item.id === entry.id; });
+    if (!p) return null;
+
+    const rank = index + 1;
+    const isTop3 = rank <= 3;
+
+    const card = document.createElement("article");
+    card.className = "top10-card" + (isTop3 ? " top10-card-top3" : "");
+
+    const metricsHtml = (p.metrics || [])
+      .map(function (m) { return '<li class="top10-metric">' + m[currentLang] + "</li>"; })
+      .join("");
+
+    const noteHtml = p.dataNote
+      ? '<p class="top10-note">' + p.dataNote[currentLang] + "</p>"
+      : "";
+
+    const altText = (p.imageAlt && p.imageAlt[currentLang]) || p.title;
+
+    card.innerHTML =
+      '<div class="top10-card-media">' +
+        (isTop3 ? '<span class="top10-badge-top3">' + t("top10_badge_top") + "</span>" : "") +
+        '<span class="top10-rank" aria-hidden="true">' + String(rank).padStart(2, "0") + "</span>" +
+        '<button type="button" class="top10-img-btn" data-img="' + p.image + '" data-alt="' + altText.replace(/"/g, "&quot;") + '" aria-label="' + t("top10_lightbox_open") + " — " + p.title + '">' +
+          '<img src="' + p.image + '" alt="' + altText.replace(/"/g, "&quot;") + '" loading="lazy" width="640" height="360">' +
+        "</button>" +
+      "</div>" +
+      '<div class="top10-card-body">' +
+        '<div class="top10-card-head">' +
+          '<h3 class="top10-card-title">' + p.title + "</h3>" +
+          '<span class="badge ' + p.badgeClass + '">' + p.tool + "</span>" +
+        "</div>" +
+        '<p class="top10-card-sector">' + p.sector[currentLang] + "</p>" +
+        '<p class="top10-card-desc">' + entry.justification[currentLang] + "</p>" +
+        '<ul class="top10-metrics">' + metricsHtml + "</ul>" +
+        noteHtml +
+        '<div class="top10-card-actions">' +
+          '<a class="top10-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("top10_cta_report") + "</a>" +
+        "</div>" +
+      "</div>";
+
+    return card;
+  }
+
+  function renderTop10() {
+    if (!top10Wrap) return;
+    top10Wrap.innerHTML = "";
+    TOP10_POWERBI.forEach(function (entry, i) {
+      const card = buildTop10Card(entry, i);
+      if (card) top10Wrap.appendChild(card);
+    });
+  }
+
+  function openLightbox(src, alt, trigger) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    lightboxTrigger = trigger || null;
+    lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.src = "";
+    document.body.classList.remove("lightbox-open");
+    if (lightboxTrigger) lightboxTrigger.focus();
+  }
+
+  if (top10Wrap && lightbox) {
+    top10Wrap.addEventListener("click", function (e) {
+      const btn = e.target.closest(".top10-img-btn");
+      if (!btn) return;
+      openLightbox(btn.dataset.img, btn.dataset.alt, btn);
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+    });
   }
 
   function renderProjects() {
@@ -158,4 +253,5 @@
 
   /* ---------- Init ---------- */
   renderProjects();
+  renderTop10();
 })();

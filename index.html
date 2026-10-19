@@ -55,6 +55,7 @@
 
     <nav class="main-nav" aria-label="Navigation principale">
       <a href="#valeur" data-i18n="nav_value">Pourquoi moi</a>
+      <a href="#top10-powerbi" data-i18n="nav_top10">Top 10 Power BI</a>
       <a href="#projets" data-i18n="nav_projects">Projets</a>
       <a href="#competences" data-i18n="nav_skills">Compétences</a>
       <a href="#experience" data-i18n="nav_experience">Expérience</a>
@@ -200,6 +201,23 @@
       </div>
     </div>
   </section>
+
+  <!-- TOP 10 POWER BI -->
+  <section class="section top10-section" id="top10-powerbi" aria-label="Top 10 projets Power BI">
+    <div class="container">
+      <p class="section-eyebrow" data-i18n="label_top10">sélection</p>
+      <h2 class="section-title" data-i18n="top10_title">Top 10 projets Power BI</h2>
+      <p class="section-intro" data-i18n="top10_intro">Mes dashboards Power BI les plus aboutis, classés par impact business, complexité technique (modélisation, DAX, Power Query) et qualité visuelle.</p>
+
+      <div class="top10-grid" id="top10-grid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox pour les aperçus Top 10 -->
+  <div class="lightbox" id="top10-lightbox" hidden role="dialog" aria-modal="true" aria-label="Aperçu agrandi du tableau de bord">
+    <button type="button" class="lightbox-close" id="top10-lightbox-close" data-i18n="top10_lightbox_close" aria-label="Fermer l'aperçu">✕</button>
+    <img class="lightbox-img" id="top10-lightbox-img" src="" alt="">
+  </div>
 
   <!-- PROJETS -->
   <section class="section section-alt" id="projets" aria-label="Projets">
