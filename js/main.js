@@ -118,7 +118,7 @@
       '<div class="top10-card-media">' +
         (isTop3 ? '<span class="top10-badge-top3">' + t("top10_badge_top") + "</span>" : "") +
         '<span class="top10-rank" aria-hidden="true">' + String(rank).padStart(2, "0") + "</span>" +
-        '<button type="button" class="top10-img-btn" data-img="' + p.image + '" data-alt="' + altText.replace(/"/g, "&quot;") + '" aria-label="' + t("top10_lightbox_open") + " — " + p.title + '">' +
+        '<button type="button" class="top10-img-btn" data-img="' + p.image + '" data-alt="' + altText.replace(/"/g, "&quot;") + '" aria-label="' + t("top10_lightbox_open") + " - " + p.title + '">' +
           '<img src="' + p.image + '" alt="' + altText.replace(/"/g, "&quot;") + '" loading="lazy" width="640" height="360">' +
         "</button>" +
       "</div>" +

@@ -1,4 +1,4 @@
-/* Project data — bilingual (fr/en). No fabricated figures: every number below
+/* Project data - bilingual (fr/en). No fabricated figures: every number below
    comes directly from the brief content provided by the client. */
 const PROJECTS = [
   {
@@ -53,7 +53,7 @@ const PROJECTS = [
     tagClass: "tag-xl",
     link: "https://docs.google.com/spreadsheets/d/1YASqQtwWRNT-Wj9jIsDgQ92C9Rjc8FpqmdbiFQOhX84",
     title: "Congo Fashion",
-    sector: { fr: "Retail — audit qualité", en: "Retail — data quality audit" },
+    sector: { fr: "Retail - audit qualité", en: "Retail - data quality audit" },
     problem: {
       fr: "Une base retail de 23 tables et ~110 000 lignes sans garantie de fiabilité pour la direction.",
       en: "A retail database of 23 tables and ~110,000 rows with no reliability guarantee for leadership."
@@ -75,7 +75,7 @@ const PROJECTS = [
     tagClass: "tag-pbi",
     link: "https://app.powerbi.com/view?r=eyJrIjoiNzNkOTEwNmItNGViOS00NDFiLWIyMGYtZWU2MGJkOTFiYzZiIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
     title: "IvoireSanté Plus",
-    sector: { fr: "Santé — réseau de cliniques", en: "Healthcare — clinic network" },
+    sector: { fr: "Santé - réseau de cliniques", en: "Healthcare - clinic network" },
     problem: {
       fr: "Aucune vue consolidée de la rentabilité sur les 11 cliniques du réseau.",
       en: "No consolidated view of profitability across the network's 11 clinics."
@@ -130,7 +130,7 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: "https://app.powerbi.com/view?r=eyJrIjoiNGVmMDZmZTktMWI5NS00N2Q5LTgxNDgtMzY1MTllNzA2M2ExIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
-    title: "Pilotage des demandes — CIB",
+    title: "Pilotage des demandes - CIB",
     sector: { fr: "Banque", en: "Banking" },
     result: {
       fr: "35 666 demandes traitées, délai moyen réduit de 4 à 1 jour.",
@@ -167,7 +167,7 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: "https://app.powerbi.com/view?r=eyJrIjoiZWFjZjZiNzctODUxNS00NjljLTk0YmUtZWE1ZjYxZmU1ODM2IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
-    title: "Analyse des ventes — CA par catégorie et marque",
+    title: "Analyse des ventes - CA par catégorie et marque",
     sector: { fr: "Commerce", en: "Retail" },
     result: {
       fr: "145K ventes, 541,85M de CA, croissance de +106,65% vs année précédente.",
@@ -269,7 +269,7 @@ const PROJECTS = [
     badgeClass: "badge-r",
     tagClass: "tag-r",
     link: "https://019fbe9b-8b6b-a5f9-0520-d24f621cef2b.share.connect.posit.cloud/",
-    title: "Santé publique — Cameroun",
+    title: "Santé publique - Cameroun",
     sector: { fr: "Santé publique", en: "Public health" },
     problem: {
       fr: "Manque de suivi consolidé des consultations de santé à l'échelle nationale, par type de service et région.",
@@ -290,9 +290,9 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Suivi nutritionnel — région du N'Zi",
-    sector: { fr: "Santé publique — nutrition infantile", en: "Public health — child nutrition" },
+    link: "https://app.powerbi.com/view?r=eyJrIjoiOTQwY2U0YjQtY2M5YS00Zjg0LTg0ZmQtNzE0NTIyNzg1YTI5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi nutritionnel - région du N'Zi",
+    sector: { fr: "Santé publique - nutrition infantile", en: "Public health - child nutrition" },
     result: {
       fr: "3 200 enfants suivis (6-59 mois) sur 20 établissements, prévalence de malnutrition aiguë globale de 11,1 %, taux de guérison PCIMA de 83,9 %.",
       en: "3,200 children tracked (6-59 months) across 20 facilities, 11.1% global acute malnutrition prevalence, 83.9% PCIMA recovery rate."
@@ -318,9 +318,9 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Suivi des demandes clients — Énergie du N'Zi Services",
-    sector: { fr: "Énergie — service client", en: "Energy — customer service" },
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZmIxZTkxZmEtM2FjOS00ZDhkLWFmOTUtMzIxOTY5MjdmNjYwIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi des demandes clients - Énergie du N'Zi Services",
+    sector: { fr: "Énergie - service client", en: "Energy - customer service" },
     result: {
       fr: "15 036 demandes traitées en 18 mois, SLA de résolution de 69,6 %, score de satisfaction (CSAT) de 54,8 %.",
       en: "15,036 requests processed over 18 months, 69.6% resolution SLA, 54.8% CSAT score."
@@ -346,9 +346,9 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Suivi eau, hygiène et sécurité alimentaire — N'Zi",
-    sector: { fr: "Humanitaire — EHA et sécurité alimentaire", en: "Humanitarian — WASH and food security" },
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZjY1NjYxNGUtNDY0Zi00MTczLWI0MWItYmIzOTU3ZjI5ZWRkIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Suivi eau, hygiène et sécurité alimentaire - N'Zi",
+    sector: { fr: "Humanitaire - EHA et sécurité alimentaire", en: "Humanitarian - WASH and food security" },
     result: {
       fr: "Accès à une source d'eau améliorée en hausse de 49,9 % à 76,7 % (+26,8 points) entre les phases de référence et finale, sur 1 475 ménages.",
       en: "Access to an improved water source rose from 49.9% to 76.7% (+26.8 points) between baseline and endline, across 1,475 households."
@@ -375,8 +375,8 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Diagnostic de la chaîne d'approvisionnement en produits de santé — Kouto",
-    sector: { fr: "Santé — logistique et chaîne d'approvisionnement", en: "Healthcare — supply chain logistics" },
+    title: "Diagnostic de la chaîne d'approvisionnement en produits de santé - Kouto",
+    sector: { fr: "Santé - logistique et chaîne d'approvisionnement", en: "Healthcare - supply chain logistics" },
     result: {
       fr: "41 structures sanitaires diagnostiquées dans le district de Kouto : 59 % de livraisons complètes, distance moyenne de 40 km au dépôt, satisfaction globale de 3,3/5.",
       en: "41 health facilities assessed in the Kouto district: 59% complete deliveries, average 40 km distance to depot, 3.3/5 overall satisfaction."
@@ -399,8 +399,8 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Qualité de vie au travail du personnel — Hôpital Général de Kouto",
-    sector: { fr: "Santé — ressources humaines", en: "Healthcare — human resources" },
+    title: "Qualité de vie au travail du personnel - Hôpital Général de Kouto",
+    sector: { fr: "Santé - ressources humaines", en: "Healthcare - human resources" },
     result: {
       fr: "Enquête auprès de 55 agents de l'Hôpital Général de Kouto : 56 % rapportent avoir été victimes d'agression, 82 % se disent toujours motivés.",
       en: "Survey of 55 staff members at Hôpital Général de Kouto: 56% report having experienced aggression, 82% say they remain motivated."
@@ -423,8 +423,8 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: null, /* aperçu uniquement : aucun rapport public vérifié */
-    title: "Dénombrement des ménages — ACP2-H (région du N'Zi)",
-    sector: { fr: "Humanitaire — démographie et ciblage", en: "Humanitarian — demographics and targeting" },
+    title: "Dénombrement des ménages - ACP2-H (région du N'Zi)",
+    sector: { fr: "Humanitaire - démographie et ciblage", en: "Humanitarian - demographics and targeting" },
     result: {
       fr: "1 441 ménages recensés sur 12 localités, 7 775 personnes dénombrées, 40,5 % de cheffes de ménage.",
       en: "1,441 households enumerated across 12 localities, 7,775 people counted, 40.5% female-headed households."
@@ -451,8 +451,8 @@ const PROJECTS = [
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
     link: "https://app.powerbi.com/view?r=eyJrIjoiMmFiYjQ1MDYtMWJiNy00ZjY2LWJmNmQtZWQzMjkzYjViZDc2IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
-    title: "Global Superstore — performance des ventes",
-    sector: { fr: "Commerce — ventes", en: "Retail — sales" },
+    title: "Global Superstore - performance des ventes",
+    sector: { fr: "Commerce - ventes", en: "Retail - sales" },
     result: {
       fr: "2,25 M$ de ventes, 4 916 commandes, 793 clients ; Technology en tête (0,83 M$), région West en tête (0,71 M$), segment Consumer à 50,9 %.",
       en: "$2.25M in sales, 4,916 orders, 793 customers; Technology leads ($0.83M), West is the top region ($0.71M), Consumer segment at 50.9%."
@@ -460,7 +460,7 @@ const PROJECTS = [
   }
 ];
 
-/* Top 10 projets Power BI — classement avec justification, validé avec le client.
+/* Top 10 projets Power BI - classement avec justification, validé avec le client.
    Référence des projets ci-dessus par id ; ordre = rang (1 = meilleur). */
 const TOP10_POWERBI = [
   { id: "nutrition-nzi", justification: { fr: "Volume important (3 200 enfants), méthodologie rigoureuse (z-scores OMS), sujet humanitaire à fort impact.", en: "Large sample (3,200 children), rigorous methodology (WHO z-scores), high-impact humanitarian topic." } },
