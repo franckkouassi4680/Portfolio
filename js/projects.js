@@ -378,8 +378,8 @@ const PROJECTS = [
     title: "Diagnostic de la chaîne d'approvisionnement en produits de santé — Kouto",
     sector: { fr: "Santé — logistique et chaîne d'approvisionnement", en: "Healthcare — supply chain logistics" },
     result: {
-      fr: "41 structures sanitaires diagnostiquées dans le district de Kouto : 43 % de livraisons complètes, distance moyenne de 22 km au dépôt, satisfaction globale de 3,6/5.",
-      en: "41 health facilities assessed in the Kouto district: 43% complete deliveries, average 22 km distance to depot, 3.6/5 overall satisfaction."
+      fr: "41 structures sanitaires diagnostiquées dans le district de Kouto : 59 % de livraisons complètes, distance moyenne de 40 km au dépôt, satisfaction globale de 3,3/5.",
+      en: "41 health facilities assessed in the Kouto district: 59% complete deliveries, average 40 km distance to depot, 3.3/5 overall satisfaction."
     },
     image: "assets/top10-powerbi/top10-chaine-approvisionnement-kouto.webp",
     imageAlt: {
@@ -388,8 +388,8 @@ const PROJECTS = [
     },
     metrics: [
       { fr: "41 structures interrogées", en: "41 facilities surveyed" },
-      { fr: "43 % de livraisons complètes", en: "43% complete deliveries" },
-      { fr: "3,6/5 satisfaction globale", en: "3.6/5 overall satisfaction" }
+      { fr: "59 % de livraisons complètes", en: "59% complete deliveries" },
+      { fr: "3,3/5 satisfaction globale", en: "3.3/5 overall satisfaction" }
     ]
   },
   {
