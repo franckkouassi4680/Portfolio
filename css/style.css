@@ -600,7 +600,7 @@ p{ margin: 0; }
   cursor: zoom-in;
   line-height: 0;
 }
-.top10-img-btn img{ width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.top10-img-btn img{ width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: var(--navy-soft); display: block; }
 .top10-img-btn:focus-visible{ outline: 3px solid var(--turquoise); outline-offset: -3px; }
 
 .top10-rank{
