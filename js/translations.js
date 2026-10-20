@@ -52,6 +52,8 @@ const TRANSLATIONS = {
   top10_title: { fr: "Top 10 projets Power BI", en: "Top 10 Power BI projects" },
   top10_intro: { fr: "Mes dashboards Power BI les plus aboutis, classés par impact business, complexité technique (modélisation, DAX, Power Query) et qualité visuelle.", en: "My most accomplished Power BI dashboards, ranked by business impact, technical complexity (modeling, DAX, Power Query) and visual quality." },
   top10_rank_label: { fr: "Rang", en: "Rank" },
+  top10_cta_preview: { fr: "Voir l'aperçu →", en: "View preview →" },
+  cta_preview: { fr: "Voir l'aperçu", en: "View preview" },
   top10_cta_report: { fr: "Voir le rapport →", en: "View report →" },
   top10_lightbox_open: { fr: "Agrandir l'aperçu", en: "Enlarge preview" },
   top10_lightbox_close: { fr: "Fermer l'aperçu", en: "Close preview" },

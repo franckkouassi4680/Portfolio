@@ -290,7 +290,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiNTcyMjJhOWUtODE2YS00ZjFiLTliMzItMjFiNDJlODk3NjNhIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Suivi nutritionnel — région du N'Zi",
     sector: { fr: "Santé publique — nutrition infantile", en: "Public health — child nutrition" },
     result: {
@@ -318,7 +318,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiMmFiYjQ1MDYtMWJiNy00ZjY2LWJmNmQtZWQzMjkzYjViZDc2IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Suivi des demandes clients — Énergie du N'Zi Services",
     sector: { fr: "Énergie — service client", en: "Energy — customer service" },
     result: {
@@ -346,7 +346,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiZjg1MWY3NDctMmM4MC00ZDhlLTgxNDQtZGJjMjc1OGRhMTU5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Suivi eau, hygiène et sécurité alimentaire — N'Zi",
     sector: { fr: "Humanitaire — EHA et sécurité alimentaire", en: "Humanitarian — WASH and food security" },
     result: {
@@ -374,7 +374,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiZjg1MWY3NDctMmM4MC00ZDhlLTgxNDQtZGJjMjc1OGRhMTU5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Diagnostic de la chaîne d'approvisionnement en produits de santé — Kouto",
     sector: { fr: "Santé — logistique et chaîne d'approvisionnement", en: "Healthcare — supply chain logistics" },
     result: {
@@ -398,7 +398,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiOTNmNGU2NGMtNjNiMS00YTFmLThiYzktMDYzNGQyY2I3MzdhIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Qualité de vie au travail du personnel — Hôpital Général de Kouto",
     sector: { fr: "Santé — ressources humaines", en: "Healthcare — human resources" },
     result: {
@@ -422,7 +422,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiMGI0MzFhMmMtYzg3NS00OWQxLWE1YTQtYzljMjkxN2E4NmE4IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    link: null, /* aperçu uniquement : aucun rapport public vérifié */
     title: "Dénombrement des ménages — ACP2-H (région du N'Zi)",
     sector: { fr: "Humanitaire — démographie et ciblage", en: "Humanitarian — demographics and targeting" },
     result: {
@@ -442,6 +442,20 @@ const PROJECTS = [
     dataNote: {
       fr: "Données de test (fictives), comme indiqué sur le tableau de bord.",
       en: "Test (simulated) data, as disclosed on the dashboard."
+    }
+  },
+  {
+    id: "global-superstore",
+    featured: false,
+    tool: "Power BI",
+    badgeClass: "badge-pbi",
+    tagClass: "tag-pbi",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMmFiYjQ1MDYtMWJiNy00ZjY2LWJmNmQtZWQzMjkzYjViZDc2IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
+    title: "Global Superstore — performance des ventes",
+    sector: { fr: "Commerce — ventes", en: "Retail — sales" },
+    result: {
+      fr: "2,25 M$ de ventes, 4 916 commandes, 793 clients ; Technology en tête (0,83 M$), région West en tête (0,71 M$), segment Consumer à 50,9 %.",
+      en: "$2.25M in sales, 4,916 orders, 793 customers; Technology leads ($0.83M), West is the top region ($0.71M), Consumer segment at 50.9%."
     }
   }
 ];

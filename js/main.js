@@ -68,7 +68,7 @@
         '<span class="proj-field-label">' + t("label_result") + '</span>' +
         '<span class="proj-field-value">' + p.result[currentLang] + "</span>" +
       "</div>" +
-      '<a class="proj-link" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("cta_view_dashboard") + "</a>";
+      (p.link ? '<a class="proj-link" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("cta_view_dashboard") + "</a>" : "");
 
     return article;
   }
@@ -86,7 +86,9 @@
       "</div>" +
       '<span class="badge ' + p.badgeClass + '">' + p.tool + "</span>" +
       '<span class="compact-result">' + p.result[currentLang] + "</span>" +
-      '<a class="compact-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("cta_view_dashboard") + "</a>";
+      (p.link
+        ? '<a class="compact-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("cta_view_dashboard") + "</a>"
+        : '<button type="button" class="compact-cta top10-img-open" data-img="' + (p.image || "") + '" data-alt="' + p.title.replace(/"/g, "&quot;") + '">' + t("cta_preview") + "</button>");
 
     return row;
   }
@@ -130,7 +132,9 @@
         '<ul class="top10-metrics">' + metricsHtml + "</ul>" +
         noteHtml +
         '<div class="top10-card-actions">' +
-          '<a class="top10-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("top10_cta_report") + "</a>" +
+          (p.link
+            ? '<a class="top10-cta" href="' + p.link + '" target="_blank" rel="noopener noreferrer">' + t("top10_cta_report") + "</a>"
+            : '<button type="button" class="top10-cta top10-img-open" data-img="' + p.image + '" data-alt="' + altText.replace(/"/g, "&quot;") + '">' + t("top10_cta_preview") + "</button>") +
         "</div>" +
       "</div>";
 
@@ -164,10 +168,18 @@
 
   if (top10Wrap && lightbox) {
     top10Wrap.addEventListener("click", function (e) {
-      const btn = e.target.closest(".top10-img-btn");
+      const btn = e.target.closest(".top10-img-btn, .top10-img-open");
       if (!btn) return;
       openLightbox(btn.dataset.img, btn.dataset.alt, btn);
     });
+
+    if (compactWrap) {
+      compactWrap.addEventListener("click", function (e) {
+        const btn = e.target.closest(".top10-img-open");
+        if (!btn || !btn.dataset.img) return;
+        openLightbox(btn.dataset.img, btn.dataset.alt, btn);
+      });
+    }
 
     lightboxClose.addEventListener("click", closeLightbox);
 
