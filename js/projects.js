@@ -374,7 +374,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZjg1MWY3NDctMmM4MC00ZDhlLTgxNDQtZGJjMjc1OGRhMTU5IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
     title: "Diagnostic de la chaîne d'approvisionnement en produits de santé - Kouto",
     sector: { fr: "Santé - logistique et chaîne d'approvisionnement", en: "Healthcare - supply chain logistics" },
     result: {
@@ -398,7 +398,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
+    link: "https://app.powerbi.com/view?r=eyJrIjoiOTNmNGU2NGMtNjNiMS00YTFmLThiYzktMDYzNGQyY2I3MzdhIiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
     title: "Qualité de vie au travail du personnel - Hôpital Général de Kouto",
     sector: { fr: "Santé - ressources humaines", en: "Healthcare - human resources" },
     result: {
@@ -422,7 +422,7 @@ const PROJECTS = [
     tool: "Power BI",
     badgeClass: "badge-pbi",
     tagClass: "tag-pbi",
-    link: null, /* aperçu uniquement : aucun rapport public vérifié */
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMGI0MzFhMmMtYzg3NS00OWQxLWE1YTQtYzljMjkxN2E4NmE4IiwidCI6IjFlODMyYTBmLTdiNWQtNGRmMC1hMjg5LWMyM2Y4YzU4MmIwYSJ9",
     title: "Dénombrement des ménages - ACP2-H (région du N'Zi)",
     sector: { fr: "Humanitaire - démographie et ciblage", en: "Humanitarian - demographics and targeting" },
     result: {
