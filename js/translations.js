@@ -13,7 +13,7 @@ const TRANSLATIONS = {
 
   hero_eyebrow: { fr: "DATA ANALYST · POWER BI · SQL · PYTHON · REMOTE FR/EN", en: "DATA ANALYST · POWER BI · SQL · PYTHON · REMOTE FR/EN" },
   hero_title: { fr: "Je transforme des données brutes en tableaux de bord clairs qui aident les équipes à décider.", en: "I turn raw data into clear dashboards that help teams decide." },
-  hero_subtitle: { fr: "Data Analyst basé à Abidjan : dashboards et reporting pour le commerce, la finance, la santé, les RH et les projets de développement (Banque Mondiale, Banque Islamique de Développement). Plus de 50 personnes formées à KoboToolbox, Excel et Power BI.", en: "Data Analyst based in Abidjan: dashboards and reporting for retail, finance, health, HR and development projects (World Bank, Islamic Development Bank). 50+ people trained in KoboToolbox, Excel and Power BI." },
+  hero_subtitle: { fr: "Data Analyst basé en Côte d'Ivoire : dashboards et reporting pour le commerce, la finance, la santé, les RH et les projets de développement (Banque Mondiale, Banque Islamique de Développement). Plus de 50 personnes formées à KoboToolbox, Excel et Power BI.", en: "Data Analyst based in Côte d'Ivoire: dashboards and reporting for retail, finance, health, HR and development projects (World Bank, Islamic Development Bank). 50+ people trained in KoboToolbox, Excel and Power BI." },
   hero_availability: { fr: "Disponible - ouvert aux opportunités remote", en: "Available - open to remote opportunities" },
   hero_cta_call: { fr: "Appeler maintenant", en: "Call now" },
   hero_cta_email: { fr: "Envoyer un email", en: "Send an email" },
